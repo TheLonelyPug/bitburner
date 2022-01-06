@@ -4,9 +4,8 @@ export async function main(ns) {
   }
 
   await ns.wget(
-    `https://raw.githubusercontent.com/TheLonelyPug/bitburner/main/worm.ns?ts=${new Date().getTime()}`,
-    `https://raw.githubusercontent.com/TheLonelyPug/bitburner/main/hackservers.ns?ts=${new Date().getTime()}`,
-    "worm.ns"
+    `https://raw.githubusercontent.com/TheLonelyPug/bitburner/main/src/download.ns?ts=${new Date().getTime()}`,
+    "download.ns"
   );
-  ns.spawn("worm.ns", 1);
+  ns.spawn("download.ns", 1);
 }
