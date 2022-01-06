@@ -1,0 +1,12 @@
+export async function main(ns) {
+  if (ns.getHostname() !== "home") {
+    throw new Exception("Run the script from home");
+  }
+
+  await ns.wget(
+    `https://raw.githubusercontent.com/TheLonelyPug/bitburner/main/worm.ns?ts=${new Date().getTime()}`,
+    `https://raw.githubusercontent.com/TheLonelyPug/bitburner/main/hackservers.ns?ts=${new Date().getTime()}`,
+    "worm.ns"
+  );
+  ns.spawn("initHacking.ns", 1);
+}
