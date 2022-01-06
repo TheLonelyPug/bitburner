@@ -36,5 +36,5 @@ export async function main(ns) {
 
   //ns.tprint(`[${localeHHMMSS()}] Spawning killAll.ns`)
   //ns.spawn('killAll.ns', 1, 'runHacking.ns')
-  ns.spawn('worm.ns n00dles foodnstuff sigma-cosmetics joesguns hong-fang-tea')
+  ns.spawn('worm.ns n00dles foodnstuff sigma-cosmetics joesguns hong-fang-tea', 1)
 }
