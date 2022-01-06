@@ -8,5 +8,5 @@ export async function main(ns) {
     `https://raw.githubusercontent.com/TheLonelyPug/bitburner/main/hackservers.ns?ts=${new Date().getTime()}`,
     "worm.ns"
   );
-  ns.spawn("initHacking.ns", 1);
+  ns.spawn("worm.ns", 1);
 }
