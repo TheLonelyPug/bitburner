@@ -35,5 +35,5 @@ export async function main(ns) {
   valuesToRemove.map((value) => localStorage.removeItem(value))
 
   ns.tprint(`[${localeHHMMSS()}] Spawning hackservers.ns`)
-  ns.spawn('worm.ns n00dles')
+  ns.spawn("worm.ns", 1);
 }
