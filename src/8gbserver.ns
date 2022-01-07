@@ -15,9 +15,10 @@ while (i < getPurchasedServerLimit()) {
         //  2. Copy our hacking script onto the newly-purchased server
         //  3. Run our hacking script on the newly-purchased server with 3 threads
         //  4. Increment our iterator to indicate that we've bought a new server
-        var hostname = purchaseServer("wumpus-" + i, ram);
-        scp("hackservers.ns", hostname),
-        exec("hackserver.ns", hostname, 3);
+        var hostname = purchaseServer("pserv-" + i, ram);
+        scp("worm.ns", hostname);
+        scp("hackingserver.ns", hostname);
+        exec("worm.ns", hostname, joesguns);
         ++i;
     }
 }
