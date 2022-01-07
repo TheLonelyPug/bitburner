@@ -2,7 +2,7 @@ const baseUrl = 'https://raw.githubusercontent.com/thelonelypug/bitburner/master
 const filesToDownload = [
   'worm.ns',
   'hackservers.ns',
-  '8gbserver.ns',
+  '8gbserver.script',
 ]
 const valuesToRemove = ['BB_SERVER_MAP']
 
