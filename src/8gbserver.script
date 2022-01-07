@@ -17,8 +17,8 @@ while (i < getPurchasedServerLimit()) {
         //  4. Increment our iterator to indicate that we've bought a new server
         var hostname = purchaseServer("wumpus-" + i, ram);
         scp("worm.ns", hostname);
-        scp("hackserver.ns", hostname);
-        exec("worm.ns", hostname, joesguns);
+        scp("hackservers.ns", hostname);
+        exec("worm.ns", joesguns);
         ++i;
     }
 }
