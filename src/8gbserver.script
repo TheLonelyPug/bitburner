@@ -18,7 +18,7 @@ while (i < getPurchasedServerLimit()) {
         var hostname = purchaseServer("wumpus-" + i, ram);
         scp("worm.ns", hostname);
         scp("hackservers.ns", hostname);
-        exec("worm.ns", joesguns);
+        exec("worm.ns", "joesguns n00dles");
         ++i;
     }
 }
