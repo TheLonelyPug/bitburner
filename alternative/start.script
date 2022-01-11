@@ -21,9 +21,9 @@ var servers1Port = ["iron-gym",
 for (var i = 0; i < servers0Port.length; ++i) {
     var serv = servers0Port[i];
 
-    scp("mollah.script", serv);
+    scp("money.script", serv);
     nuke(serv);
-    exec("mollah.script", serv, 6);
+    exec("money.script", serv, 6);
 }
 
 // Wait until we acquire the "BruteSSH.exe" program
